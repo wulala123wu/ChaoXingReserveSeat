@@ -1,12 +1,12 @@
 # This is a basic workflow that is manually triggered
 
-name: auto_Reserve
+name: 2auto_Reserve
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
   schedule:
-    - cron: "20 11 * * 0,1,2,3,4" # 周一到周五每天早上5:59启动（防止github action过于高负载）
+    - cron: "55 11 * * 0,1,2,3,4" # 周一到周五每天早上5:59启动（防止github action过于高负载）
   workflow_dispatch:
   
 jobs:
@@ -27,8 +27,8 @@ jobs:
 
       - name: run script
         env:
-          USERNAMES: ${{ secrets.USERNAMES }}
-          PASSWORDS: ${{ secrets.PASSWORDS }}
+          USERNAMES: ${{ secrets.USERNAMES1 }}
+          PASSWORDS: ${{ secrets.PASSWORDS1 }}
         run: |
           python main.py -m reserve --action
 
