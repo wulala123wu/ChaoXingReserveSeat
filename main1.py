@@ -10,7 +10,7 @@ import argparse
 import os
 
 SLEEPTIME = 0.2
-ENDTIME = "18:02:00"
+ENDTIME = "22:02:00"
 
 class reserve:
     def __init__(self):
@@ -166,8 +166,8 @@ def main(users, action=False):
 def debug(users, action):
     suc = False
     if action:
-        usernames = os.environ['USERNAMES']
-        passwords = os.environ['PASSWORDS']
+        usernames = os.environ['USERNAMES1']
+        passwords = os.environ['PASSWORDS1']
     for index, user in enumerate(users):
         username, password, times, roomid, seatid = user.values()
         if action:
