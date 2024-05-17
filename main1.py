@@ -10,7 +10,7 @@ import argparse
 import os
 
 SLEEPTIME = 0.2
-ENDTIME = "18:02:00"
+ENDTIME = "23:59:00"
 
 class reserve:
     def __init__(self):
