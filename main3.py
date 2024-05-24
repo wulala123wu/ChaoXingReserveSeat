@@ -11,7 +11,7 @@ get_current_time = lambda action: time.strftime("%H:%M:%S", time.localtime(time.
 get_current_dayofweek = lambda action: time.strftime("%A", time.localtime(time.time() + 8*3600)) if action else time.strftime("%A", time.localtime(time.time()))
 
 
-SLEEPTIME = 0.1 # 每次抢座的间隔
+SLEEPTIME = 0.2 # 每次抢座的间隔
 ENDTIME = "22:31:00" # 根据学校的预约座位时间+1min即可
 
 ENABLE_SLIDER = True # 是否有滑块验证
