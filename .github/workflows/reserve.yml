@@ -27,8 +27,8 @@ jobs:
 
       - name: run script
         env:
-          USERNAMES: ${{ secrets.USERNAMES }}
-          PASSWORDS: ${{ secrets.PASSWORDS }}
+          USERNAMES: ${{ secrets.USERNAMES2 }}
+          PASSWORDS: ${{ secrets.PASSWORDS2 }}
         run: |
           python main.py -m reserve --action
 
