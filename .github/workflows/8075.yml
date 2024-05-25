@@ -30,6 +30,6 @@ jobs:
           USERNAMES: ${{ secrets.USERNAMES3 }}
           PASSWORDS: ${{ secrets.PASSWORDS3 }}
         run: |
-          python main.py -m reserve --action
+          python main.py -m debug --action
 
 
