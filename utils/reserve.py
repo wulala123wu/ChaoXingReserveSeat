@@ -215,7 +215,7 @@ class reserve:
         delta_day = 1 if self.reserve_next_day else 0
         day = datetime.date.today() + datetime.timedelta(days=0+delta_day)  # 预约今天，修改days=1表示预约明天
         if action:
-            day = datetime.date.today() + datetime.timedelta(days=1+delta_day)  # 由于action时区问题导致其早+8区一天
+            day = datetime.date.today() + datetime.timedelta(days=2+delta_day)  # 由于action时区问题导致其早+8区一天
         parm = {
             "roomId": roomid,
             "startTime": times[0],
