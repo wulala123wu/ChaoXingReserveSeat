@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: auto_Reserve
+name: 8073
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -27,8 +27,8 @@ jobs:
 
       - name: run script
         env:
-          USERNAMES: ${{ secrets.USERNAMES }}
-          PASSWORDS: ${{ secrets.PASSWORDS }}
+          USERNAMES: ${{ secrets.USERNAMES3 }}
+          PASSWORDS: ${{ secrets.PASSWORDS3 }}
         run: |
           python main.py -m debug --action
 
